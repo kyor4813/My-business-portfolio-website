@@ -1,0 +1,277 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: url('Background.png') no-repeat center center;
+      background-size: cover;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo img {
+      height: 48px;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: #db4d7b;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #a53863;
+    }
+
+    .home {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem 2rem;
+      height: calc(100vh - 100px); /* Adjust for header height */
+    }
+
+    .home-text {
+      flex: 1;
+      max-width: 600px;
+      padding-right: 2rem;
+    }
+
+    .home-text h1 {
+      font-size: 2.8rem;
+      color: #222;
+      margin-bottom: 0.3rem;
+    }
+
+    .home-text h2 {
+      font-size: 2rem;
+      font-family: 'Brush Script MT', cursive;
+      color: #000;
+      margin-bottom: 1.5rem;
+    }
+
+    .home-text p {
+      font-size: 1.1rem;
+      font-style: italic;
+      line-height: 1.6;
+      max-width: 500px;
+    }
+
+    .home-img {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100%;
+    }
+
+    .home-img img {
+      max-width: 100%;
+      width: 280px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+      }
+
+      .home-text {
+        padding-right: 0;
+      }
+
+      .home-img {
+        justify-content: center;
+        margin-top: 2rem;
+      }
+    }
+
+.about-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 3rem;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .about-image {
+      flex: 1;
+      max-width: 400px;
+      border: 10px solid #86d1f2;
+      padding: 8px;
+      background: #fbdce7;
+    }
+
+    .about-image img {
+        width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .about-text {
+      flex: 2;
+      max-width: 700px;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-text {
+        max-width: 100%;
+      }
+    }
+
+.product {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.product-bar {
+  width: 90%;
+  height: 40px;
+  background-color: #f9cbd6;
+  border-radius: 5px;
+}
+
+.product-section {
+  padding: 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.product-card {
+  text-align: center;
+}
+
+.product-card img {
+  width: 180px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #000;
+}
+
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.portfolio-bar {
+  width: 90%;
+  height: 40px;
+  background-color: #f9cbd6;
+  border-radius: 5px;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px 50px;
+}
+
+.portfolio-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  background-color: #d8ecfd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.portfolio-text h3 {
+  font-size: 18px;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+}
+
+.portfolio-text p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background-color: #b7dffc;
+  width: 250px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.contact-card p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.contact-card a {
+  color: #000;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+ 
